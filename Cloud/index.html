@@ -1,0 +1,1542 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Cloud - Seung Jun's Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cloud" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Seung Jun&#39;s Notes" class="md-header__button md-logo" aria-label="Seung Jun's Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Seung Jun's Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cloud
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Seung Jun&#39;s Notes" class="md-nav__button md-logo" aria-label="Seung Jun's Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Seung Jun's Notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AlgorithmicProblems/" class="md-nav__link">
+        Algorithimic Problems
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Anki/" class="md-nav__link">
+        Anki
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Cloud
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Cloud
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#google-cloud-platform" class="md-nav__link">
+    Google Cloud Platform
+  </a>
+  
+    <nav class="md-nav" aria-label="Google Cloud Platform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#products" class="md-nav__link">
+    Products
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identity-and-access-management-iam" class="md-nav__link">
+    Identity and Access Management (IAM)
+  </a>
+  
+    <nav class="md-nav" aria-label="Identity and Access Management (IAM)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iam-glossary" class="md-nav__link">
+    IAM Glossary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-iam" class="md-nav__link">
+    Project IAM
+  </a>
+  
+    <nav class="md-nav" aria-label="Project IAM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#roles-and-permissions" class="md-nav__link">
+    Roles and Permissions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#members-and-roles" class="md-nav__link">
+    Members and Roles
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage-iam" class="md-nav__link">
+    Storage IAM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bigquery-iam" class="md-nav__link">
+    BigQuery IAM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-management" class="md-nav__link">
+    Group Management
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcp-training-on-infrastructure" class="md-nav__link">
+    GCP Training on Infrastructure
+  </a>
+  
+    <nav class="md-nav" aria-label="GCP Training on Infrastructure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vm" class="md-nav__link">
+    VM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    Storage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#k8s" class="md-nav__link">
+    K8S
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app-engine" class="md-nav__link">
+    App Engine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#big-data-and-machine-learning" class="md-nav__link">
+    Big Data and Machine Learning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bigquery" class="md-nav__link">
+    BigQuery
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcp-training-on-big-data-and-machine-learning" class="md-nav__link">
+    GCP Training on Big Data and Machine Learning
+  </a>
+  
+    <nav class="md-nav" aria-label="GCP Training on Big Data and Machine Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataproc" class="md-nav__link">
+    Dataproc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bigquery_1" class="md-nav__link">
+    BigQuery
+  </a>
+  
+    <nav class="md-nav" aria-label="BigQuery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storage-service" class="md-nav__link">
+    Storage Service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-service" class="md-nav__link">
+    Query Service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ml" class="md-nav__link">
+    ML
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bqml" class="md-nav__link">
+    BQML
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pubsub" class="md-nav__link">
+    Pub/Sub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataflow" class="md-nav__link">
+    Dataflow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-studio" class="md-nav__link">
+    Data Studio
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Docker/" class="md-nav__link">
+        Docker
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Git/" class="md-nav__link">
+        Git
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Learning/" class="md-nav__link">
+        Learn How to Learn
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Memo/" class="md-nav__link">
+        Spaced Repitition
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MentalModels/" class="md-nav__link">
+        Mental Models
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Python/" class="md-nav__link">
+        Python
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TIL/" class="md-nav__link">
+        Today I Learned
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TechnologyRadar/" class="md-nav__link">
+        Technology Radar
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VIM/" class="md-nav__link">
+        VIM
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VisualStudioCode/" class="md-nav__link">
+        Visual Studio Code
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15">
+          Book notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Book notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_15">
+          <span class="md-nav__icon md-icon"></span>
+          Book notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../book-notes/Books/" class="md-nav__link">
+        A is For Admission
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16">
+          Game notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Game notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_16">
+          <span class="md-nav__icon md-icon"></span>
+          Game notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game-notes/HollowKnight/" class="md-nav__link">
+        Hollow Knight
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game-notes/Poker/" class="md-nav__link">
+        Poker
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17" type="checkbox" id="__nav_17" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_17">
+          Quant notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Quant notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_17">
+          <span class="md-nav__icon md-icon"></span>
+          Quant notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quant-notes/Options/" class="md-nav__link">
+        Options
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quant-notes/Quantopian/" class="md-nav__link">
+        Quantopian
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_18" type="checkbox" id="__nav_18" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_18">
+          Tech notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tech notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_18">
+          <span class="md-nav__icon md-icon"></span>
+          Tech notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech-notes/Kubernetes/" class="md-nav__link">
+        Kubernetes Tutorial for Beginners
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_19" type="checkbox" id="__nav_19" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_19">
+          Webdev notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Webdev notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_19">
+          <span class="md-nav__icon md-icon"></span>
+          Webdev notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../webdev-notes/React/" class="md-nav__link">
+        React
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../webdev-notes/Redux/" class="md-nav__link">
+        Redux
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#google-cloud-platform" class="md-nav__link">
+    Google Cloud Platform
+  </a>
+  
+    <nav class="md-nav" aria-label="Google Cloud Platform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#products" class="md-nav__link">
+    Products
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identity-and-access-management-iam" class="md-nav__link">
+    Identity and Access Management (IAM)
+  </a>
+  
+    <nav class="md-nav" aria-label="Identity and Access Management (IAM)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iam-glossary" class="md-nav__link">
+    IAM Glossary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-iam" class="md-nav__link">
+    Project IAM
+  </a>
+  
+    <nav class="md-nav" aria-label="Project IAM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#roles-and-permissions" class="md-nav__link">
+    Roles and Permissions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#members-and-roles" class="md-nav__link">
+    Members and Roles
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage-iam" class="md-nav__link">
+    Storage IAM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bigquery-iam" class="md-nav__link">
+    BigQuery IAM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-management" class="md-nav__link">
+    Group Management
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcp-training-on-infrastructure" class="md-nav__link">
+    GCP Training on Infrastructure
+  </a>
+  
+    <nav class="md-nav" aria-label="GCP Training on Infrastructure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vm" class="md-nav__link">
+    VM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    Storage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#k8s" class="md-nav__link">
+    K8S
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app-engine" class="md-nav__link">
+    App Engine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#big-data-and-machine-learning" class="md-nav__link">
+    Big Data and Machine Learning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bigquery" class="md-nav__link">
+    BigQuery
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gcp-training-on-big-data-and-machine-learning" class="md-nav__link">
+    GCP Training on Big Data and Machine Learning
+  </a>
+  
+    <nav class="md-nav" aria-label="GCP Training on Big Data and Machine Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataproc" class="md-nav__link">
+    Dataproc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bigquery_1" class="md-nav__link">
+    BigQuery
+  </a>
+  
+    <nav class="md-nav" aria-label="BigQuery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storage-service" class="md-nav__link">
+    Storage Service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-service" class="md-nav__link">
+    Query Service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ml" class="md-nav__link">
+    ML
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bqml" class="md-nav__link">
+    BQML
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pubsub" class="md-nav__link">
+    Pub/Sub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataflow" class="md-nav__link">
+    Dataflow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-studio" class="md-nav__link">
+    Data Studio
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="cloud">Cloud</h1>
+<h2 id="google-cloud-platform">Google Cloud Platform</h2>
+<h3 id="products">Products</h3>
+<ul>
+<li>Identity-Aware Proxy "lets you manage who has access to services hosted on App Engine, Compute Engine, or an HTTPS Load Balancer."</li>
+<li>Load Balancer (for HTTP(S), TCP, and UDP)</li>
+<li>Cloud Composer - managed Apache Airflow</li>
+<li>Data Fusion - GUI-based ETL tool</li>
+<li>Dataprep - another visual ETL tool</li>
+<li>Dataflow - managed Apache Beam</li>
+<li>Dataproc - managed Spark and Hadoop</li>
+<li>Data Catalog - metadata management service</li>
+<li>Data Studio</li>
+</ul>
+<h3 id="identity-and-access-management-iam">Identity and Access Management (IAM)</h3>
+<h4 id="iam-glossary">IAM Glossary</h4>
+<ul>
+<li>A <em>member</em> can be a user, a service account, or a group.</li>
+<li>A <em>group</em> consists of members.</li>
+<li>A <em>role</em> is given a set of <em>permissions</em>.</li>
+<li>A <em>member</em> is given a role. A member cannot be given permissions directly.</li>
+</ul>
+<h4 id="project-iam">Project IAM</h4>
+<p>List project roles and members:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>gcloud projects get-iam-policy PROJECT_ID
+</code></pre></div>
+<p>Grant a role to a member:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">## type := user | serviceAccount | group</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1">## member := $type:EMAIL</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1">## role = roles/&lt;predefined-role-name&gt; | projects/&lt;project-name&gt;/roles/&lt;custom-role-name&gt;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>gcloud projects add-iam-policy-binding PROJECT_ID --member<span class="o">=</span><span class="nv">$member</span> --role<span class="o">=</span><span class="nv">$role</span>
+</code></pre></div>
+<h5 id="roles-and-permissions">Roles and Permissions</h5>
+<p>Given a role, list all permissions</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>## Pre-defined roles
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>gcloud iam roles describe roles/editor
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>## Project-specific roles
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>gcloud iam roles describe --project ts-quantsource TS.AlphaStudio.Developer
+</code></pre></div>
+<p>References:
+* <a href="https://cloud.google.com/iam/docs/permissions-reference">Permission to roles</a>
+* <a href="https://cloud.google.com/iam/docs/understanding-roles">Role to permissions</a></p>
+<h5 id="members-and-roles">Members and Roles</h5>
+<p>Given a member (user, service account, or group) in an project, list all roles</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>## Note $MEMBER is partial match.
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>PROJECT=ts-quantsource
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>MEMBER=beirut-server@ts-quantsource.iam.gserviceaccount.com
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>gcloud projects get-iam-policy $PROJECT --flatten=&quot;bindings[].members&quot; --format=&#39;table(bindings.members,bindings.role)&#39; --filter=&quot;bindings.members:$MEMBER&quot;
+</code></pre></div>
+<p>Given a role in a project, list all members</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>## Note $ROLE is partial match.
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>gcloud projects get-iam-policy $PROJECT --flatten=&quot;bindings[].members&quot; --format=&quot;table(bindings.role,bindings.members)&quot; --filter=&quot;bindings.role:$ROLE&quot;
+</code></pre></div>
+<h4 id="storage-iam">Storage IAM</h4>
+<p>List permissions on a storage bucket:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>gsutil iam get gs://&lt;bucket&gt;
+</code></pre></div>
+<p>Grant a permission. Use <code>-d</code> in front of a binding to delete.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">## member := user | serviceAccount | group | ...</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c1">## role := objectViewer | objectWriter</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1">## binding := $member:EMAIL:$role</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>gsutil iam ch <span class="nv">$binding</span> <span class="o">[</span><span class="nv">$binding</span> ...<span class="o">]</span> gs://BUCKET_NAME
+</code></pre></div>
+<h4 id="bigquery-iam">BigQuery IAM</h4>
+<p>List dataset permissions</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>bq show --format=prettyjson PROJECT_ID:DATASET
+</code></pre></div>
+<p>List table permissions (we don't do table-level permissioning)</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>bq get-iam-policy PROJECT_ID:DATASET.TABLE
+</code></pre></div>
+<p>Update permissions. There gotta be a better way.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>bq show --format=prettyjson PROJECT_ID:DATASET &gt; JSON
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>vi JSON
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>bq update --source JSON PROJECT_ID:DATASET
+</code></pre></div>
+<h4 id="group-management">Group Management</h4>
+<p>Given a domain, list all groups</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>???
+</code></pre></div>
+<p>Given a group, list members</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>gcloud identity groups memberships list --group-email as-admins@alphastudio.com --format &#39;table(preferredMemberKey.id)&#39;
+</code></pre></div>
+<p>Given a member, list all groups</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>???
+</code></pre></div>
+<h2 id="gcp-training-on-infrastructure">GCP Training on Infrastructure</h2>
+<p>Instructor: michaelabel@google.com</p>
+<h3 id="introduction">Introduction</h3>
+<ul>
+<li>region - physical data center</li>
+<li>zone - separate configuration within a data center</li>
+<li>https://cloud.google.com/about/locations/</li>
+<li>Data centers use 2% of global energy. The Cloud industry needs to be eco-friendly.</li>
+<li>Organization -&gt; Folder (nested) -&gt; Project -&gt; Resource (VM, storage, etc.)</li>
+<li>Billing is done at the project level.</li>
+<li>When permission rules are conflicting (say, between resource-level and project-level), the least restrictive rule applies. Google claims that it gives more flexibility. It can be risky from a security perspective.</li>
+</ul>
+<p>Identity Access Management (IAM)</p>
+<ul>
+<li>IAM roles - collections of related permissions (service, resource, verb)</li>
+<li>Users get roles on specific items in the resource hierarchy.</li>
+<li>Primitive roles (owner/editor/viewer | billing admin)</li>
+<li>Predefined roles (for a particular service)</li>
+<li>Custom roles</li>
+</ul>
+<h3 id="vm">VM</h3>
+<p><code>gcloud compute ssh &lt;name&gt;</code></p>
+<h3 id="storage">Storage</h3>
+<ul>
+<li>Classes: multi-regional, regional, nearline, coldline</li>
+<li>Bigtables: ~ HBase. Managed No-SQL</li>
+<li>Cloud SQL: Managed RDBMS</li>
+<li>MySQL or PostgreSQL</li>
+<li>PostgreSQL - up to 30 TB</li>
+<li>Cloud Spanner - better scalability than Cloud SQL</li>
+</ul>
+<p>You can make a bucket item world-readable and have it available on the web.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>gsutil acl ch -u allUsers:R gs://$DEVSHELL_PROJECT_ID/my-excellent-blog.png
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>Available at
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>https://storage.googleapis.com/qwiklabs-gcp-00-29a6802e787e/my-excellent-blog.png
+</code></pre></div>
+<h3 id="k8s">K8S</h3>
+<ul>
+<li>Kubernetes (open source) and Kubernetes Engine (GCP product)</li>
+<li>Google Container Registry</li>
+<li>Pod - a set of running containers</li>
+<li>Anthos (hybrid - managed K8S and GKE on-prem)</li>
+</ul>
+<h3 id="app-engine">App Engine</h3>
+<ul>
+<li>App Engine Standard</li>
+<li>App Engine Flexible</li>
+<li>Cloud Endpoints</li>
+<li>Apigee Edge - monetize APIs</li>
+</ul>
+<h3 id="big-data-and-machine-learning">Big Data and Machine Learning</h3>
+<ul>
+<li>Dataproc - Hadoop and Spark</li>
+<li>Dataflow - ETL, orchestration, exactly-once ordered processing of streaming data</li>
+<li>BigQuery - pretty expensive</li>
+<li>PubSub - messages live up to 7 days</li>
+<li>Google Cloud AI Platform Notebooks - sort of replacing Datalab</li>
+</ul>
+<h3 id="bigquery">BigQuery</h3>
+<p>A dataset is a namespace that holds zero or more tables.</p>
+<h2 id="gcp-training-on-big-data-and-machine-learning">GCP Training on Big Data and Machine Learning</h2>
+<ul>
+<li>Organization -&gt; folders -&gt; projects -&gt; resources</li>
+<li>Billing is done on the project level.</li>
+<li>Not all services are available on all sites. https://cloud.google.com/about/locations</li>
+<li>Dataflow ~ Apache Beam</li>
+<li>Dataprep - cleaning and transforming UI tool</li>
+<li>Dataproc ~ managed Hadoop or Spark</li>
+<li>Bigtable ~ HBase</li>
+<li>Colossus - underlying BigQuery</li>
+<li>$5 per TB. The first TB is free every month.</li>
+<li>cloud.google.com/customers</li>
+<li>BigQuery is a petabyte storage while Storage is an exobyte storage.</li>
+<li>RankBrain (ML for search ranking)</li>
+<li>Petabyte cross-site bisectional network bandwidth - enable separation between compute and storage</li>
+<li>Preemptible VMs - 80% cheaper than permanent VMs</li>
+<li>ALS with PySpark</li>
+<li>Is our data big enough to use BigQuery?</li>
+</ul>
+<h3 id="dataproc">Dataproc</h3>
+<p>PySpark</p>
+<ul>
+<li>Matrix factorization - used in recommendation system.</li>
+<li>ALS (alternating least squares) - used for matrix fatorization</li>
+</ul>
+<h3 id="bigquery_1">BigQuery</h3>
+<ul>
+<li>Petabyte storage</li>
+<li>Petabyte bisectional bandwidth between storage and query services.</li>
+<li>Dataset - holder for tables</li>
+<li>Federated query?</li>
+<li>Supports streaming. No UI support, however. A few seconds latency.</li>
+<li>For streaming, use BigQuery directly for ELT or Dataflow for ETL?</li>
+<li>STRUCT and ARRAY</li>
+<li>GIS capability (ST_GeogPoint(longitude, latitude))</li>
+</ul>
+<h4 id="storage-service">Storage Service</h4>
+<ul>
+<li>Column-oriented?</li>
+<li>Uses Colossus as storage</li>
+<li>Supports both bulk and streaming ingest</li>
+</ul>
+<h4 id="query-service">Query Service</h4>
+<ul>
+<li>Web UI</li>
+<li>CLI: bq</li>
+<li>Rest API</li>
+</ul>
+<h3 id="ml">ML</h3>
+<ul>
+<li>features</li>
+<li>label (continuous or discrete) - what you want to predict (i.e., output)</li>
+<li>model = function from features to label</li>
+<li>
+<p>example = observation</p>
+</li>
+<li>
+<p>ROC AUC</p>
+</li>
+<li>
+<p>playground.tensorflow.org</p>
+</li>
+<li>
+<p>Containers on cargo to predict economic numbers.</p>
+</li>
+</ul>
+<h3 id="bqml">BQML</h3>
+<ul>
+<li>Write machine learning models with SQL</li>
+</ul>
+<h3 id="pubsub">Pub/Sub</h3>
+<ul>
+<li>topic / subscription / subscriber</li>
+<li>Each subscription receives every message on the topic.</li>
+<li>Not all subscribers receive every message from subscription.</li>
+<li>At-least-once delivery</li>
+<li>push and pull - between subscription and subscribers</li>
+</ul>
+<h3 id="dataflow">Dataflow</h3>
+<p>Apache Beam. DAG executor.</p>
+<ul>
+<li>github.com/Google.../...templates</li>
+<li>Java, Python, and Go.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>p = Pipeline.create()
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>p.apply(...)
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>p.apply(...)
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>...
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>p.run()
+</code></pre></div>
+<h3 id="data-studio">Data Studio</h3>
+<p>Dashboard</p>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../Anki/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Anki" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Anki
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Docker/" class="md-footer__link md-footer__link--next" aria-label="Next: Docker" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Docker
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>
